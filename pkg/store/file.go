@@ -28,12 +28,10 @@ func Save() {
 		log.Fatal("Could not read in-memory tasks: ", err)
 	}
 
-	bytes, err := file.Write(dat)
+	_, err = file.Write(dat)
 	if err != nil {
 		log.Fatal("Failed to write to tasky.db: ", err)
 	}
-
-	log.Println("Save tasks, wrote bytes -", bytes)
 }
 
 // Load - saved tasks from file

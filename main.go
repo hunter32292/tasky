@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"math/rand"
 	"os"
 	"time"
@@ -14,7 +13,6 @@ func init() {
 }
 
 func main() {
-	log.Println("Starting ...")
 	cmd.RunTasky()
 	os.Exit(0)
 }
