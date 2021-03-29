@@ -1,3 +1,3 @@
 module github.com/hunter32292/tasky
 
-go 1.13
+go 1.14
